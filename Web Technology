@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SITCOE Yadrav - Sharad Institute of Technology</title>
+  <style>
+    /* ---------- Global Styles ---------- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background-color: #f5f8fc;
+      color: #fa0000;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ---------- Header ---------- */
+    header {
+      background-color: #e0aa07;
+      color: rgba(5, 14, 57, 0.149);
+      text-align: center;
+      padding: 20px 10px;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    header p {
+      font-size: 1rem;
+      font-style: italic;
+      margin-top: 5px;
+    }
+
+    /* ---------- Navigation ---------- */
+    nav {
+      background-color: #c9ced4;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 15px 20px;
+      color: rgb(154, 159, 19);
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #a2ba55;
+    }
+
+    /* ---------- Hero Section ---------- */
+    .hero {
+      background: url('college.jpg') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: rgb(194, 174, 174);
+      text-align: center;
+      position: relative;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(227, 7, 7, 0.5);
+    }
+
+    .hero-content {
+      position: relative;
+      max-width: 800px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+    }
+
+    /* ---------- About Section ---------- */
+    section {
+      padding: 60px 10%;
+      background-color: #fff;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    section h2 {
+      text-align: center;
+      color: #004080;
+      margin-bottom: 30px;
+      font-size: 1.8rem;
+    }
+
+    .about p {
+      text-align: justify;
+      font-size: 1.05rem;
+    }
+
+    /* ---------- Departments ---------- */
+    .departments {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px;
+    }
+
+    .dept-card {
+      background-color: #e6f0ff;
+      width: 300px;
+      border-radius: 8px;
+      text-align: center;
+      padding: 20px;
+      transition: 0.3s;
+    }
+
+    .dept-card:hover {
+      background-color: #cce0ff;
+      transform: scale(1.05);
+    }
+
+    .dept-card img {
+      width: 100%;
+      border-radius: 8px;
+      height: 180px;
+      object-fit: cover;
+    }
+
+    .dept-card h3 {
+      color: #004080;
+      margin: 15px 0 10px;
+    }
+
+    /* ---------- Academics ---------- */
+    .academics ul {
+      list-style: square inside;
+      padding-left: 20px;
+      font-size: 1.05rem;
+    }
+
+    /* ---------- Campus Life ---------- */
+    .campus {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+
+    .campus img {
+      width: 320px;
+      height: 200px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    }
+
+    /* ---------- Footer ---------- */
+    footer {
+      background-color: #004080;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.95rem;
+    }
+
+    footer a {
+      color: #99ccff;
+      margin: 0 10px;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 1.8rem;
+      }
+
+      section {
+        padding: 40px 5%;
+      }
+
+      .dept-card, .campus img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Sharad Institute of Technology College of Engineering, Yadrav</h1>
+    <p>(An Autonomous Institute | NAAC [A] Grade Accredited)</p>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#departments">Departments</a>
+    <a href="#academics">Academics</a>
+    <a href="#campus-life">Campus Life</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>Welcome to SITCOE Yadrav</h2>
+      <p>Empowering Engineers of Tomorrow through Innovation, Knowledge, and Excellence.</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2>About SITCOE</h2>
+    <p>
+      Established in 2009 under the Shri Shamrao Patil (Yadravkar) Educational & Charitable Trust, 
+      Sharad Institute of Technology College of Engineering (SITCOE), Yadrav, 
+      is committed to delivering world-class technical education. 
+      The institute is approved by AICTE, New Delhi, and affiliated to Dr. Babasaheb Ambedkar Technological University, Lonere.
+      Accredited with an 'A' Grade by NAAC, SITCOE focuses on fostering innovation, research, and excellence among students.
+    </p>
+  </section>
+
+  <!-- Departments Section -->
+  <section id="departments">
+    <h2>Our Departments</h2>
+    <div class="departments">
+      <div class="dept-card">
+        <img src="computer.jpg" alt="Computer Science Department">
+        <h3>Computer Science & Engineering</h3>
+        <p>Equipping students with cutting-edge skills in software, AI, and emerging technologies.</p>
+      </div>
+      <div class="dept-card">
+        <img src="mechanical.jpg" alt="Mechanical Department">
+        <h3>Mechanical Engineering</h3>
+        <p>Creating innovators in design, manufacturing, and industrial automation.</p>
+      </div>
+      <div class="dept-card">
+        <img src="civil.jpg" alt="Civil Department">
+        <h3>Civil Engineering</h3>
+        <p>Building the future with sustainable and smart infrastructure design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Academics Section -->
+  <section class="academics" id="academics">
+    <h2>Academics</h2>
+    <ul>
+      <li>Undergraduate and Postgraduate Programs</li>
+      <li>Industry-Oriented Curriculum</li>
+      <li>Research and Development Cell</li>
+      <li>Online Learning and Digital Resources</li>
+      <li>Student Mentorship and Career Guidance</li>
+    </ul>
+  </section>
+
+  <!-- Campus Life Section -->
+  <section id="campus-life">
+    <h2>Campus Life</h2>
+    <div class="campus">
+      <img src="campus1.jpg" alt="Campus View">
+      <img src="library.jpg" alt="Library">
+      <img src="lab.jpg" alt="Engineering Lab">
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <p><strong>Sharad Institute of Technology College of Engineering, Yadrav</strong></p>
+    <p>Address: Gat No. 81/A, Yadrav (Ichalkaranji), Tal. Shirol, Dist. Kolhapur - 416121</p>
+    <p>Phone: +91 231 223 4444 | Email: info@sitcoe.ac.in</p>
+    <p>
+      <a href="#">Facebook</a> |
+      <a href="#">Instagram</a> |
+      <a href="#">LinkedIn</a> |
+      <a href="#">YouTube</a>
+    </p>
+    <p>&copy; 2025 SITCOE Yadrav. All Rights Reserved.</p>
+  </footer>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</body>
+</html>
